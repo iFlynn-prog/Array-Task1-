@@ -19,9 +19,9 @@ public class Task1 {
         }
 
         System.out.println();
-        System.out.print("Kolichestvo polozhitelnih elementov" + " >> " + j + " <<");
+        System.out.print("Kolichestvo chisel > 0" + " >> " + j + " <<");
         System.out.println();
-
+// Цикл замены последнего числа на первое в массиве, второго на предпоследнее и т.д.
         for(int i = 0; i < numbers.length / 2; i++)
         {
             int temp = numbers[i];
@@ -29,15 +29,12 @@ public class Task1 {
             numbers[numbers.length - i - 1] = temp;
 
         }
-
+// Вывод на экран перевернутого массива
             int[] reverse = new int[10];
         for (j = 0; j < reverse.length -1; j++)
         {
            reverse[j] = numbers[j];
            System.out.print(reverse[j]);
         }
-
-
-
    }
 }
